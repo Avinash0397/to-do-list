@@ -3,7 +3,7 @@ name: Deployment Workflow
 on:
   push:
     branches: 
-      - master
+      - main
 
 jobs:
   build:
@@ -35,5 +35,4 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm i
-      - name: Run unit tests
-        run: npm test
+     

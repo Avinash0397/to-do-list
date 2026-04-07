@@ -24,5 +24,4 @@ jobs:
         docker build -t github-action  .
 
     - name: Push Docker Image
-      run: |
-        docker push github-action:latest
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/github-action:latest

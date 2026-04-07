@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: user/app:latest
+          tags: avinash031997/avinash031997:tagname
